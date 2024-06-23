@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<HTML lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.7.0/simple-lightbox.min.css">
+</head>
+<body>
+    <header>
+        <h1>Flower Gallery</h1>
+    </header>
+    <main>
+        <section class="gallery">
+            <div class = "gallery-item">
+                <a href="photos/lotus.jpg" target="_blank">
+                    <img src="photos/lotus.jpg" alt="Lotus" loading="lazy">
+                </a>
+                <div class="caption">Lotus</div>
+            </div>
+            <div class = "gallery-item">
+                <a href="photos/lily.jpg" target="_blank">
+                    <img src="photos/lily.jpg" alt="Lily" loading="lazy">
+                </a>
+                <div class="caption">Lily</div>
+            </div>
+            <div class="gallery-item">
+                <a href="photos/lavender.jpg" target="_blank">
+                    <img src="photos/lavender.jpg" alt="Lavender" loading="lazy">
+                </a>
+                <div class="caption">Lavender</div>
+            </div>
+            <div class="gallery-item">
+                <a href="photos/dandelions.jpg" target="_blank">
+                    <img src="photos/dandelions.jpg" alt="Dandelions" loading="lazy">
+                </a>
+                <div class="caption">Dandelions</div>
+            </div>
+            <div class="gallery-item">
+                <a href="photos/sunflower.jpg" target="_blank">
+                    <img src="photos/sunflower.jpg" alt="Sunflower" loading="lazy">
+                </a>
+                <div class="caption">Sunflower</div>
+            </div>
+            <div class="gallery-item">
+                <a href="photos/rose.jpg" target="_blank">
+                    <img src="photos/rose.jpg" alt="Rose" loading="lazy">
+                </a>
+                <div class="caption">Rose</div>
+            </div>
+            <div class = "gallery-item">
+                <a href="photos/dahila.jpeg" target="_blank">
+                    <img src="photos/dahila.jpeg" alt="Dahila" loading="lazy">
+                </a>
+                <div class="caption">Dahila</div>
+            </div>
+            <div class = "gallery-item">
+                <a href="photos/daisy.jpg" target="_blank">
+                    <img src="photos/daisy.jpg" alt="Daisy" loading="lazy">
+                </a>
+                <div class="caption">Daisy</div>
+            </div>
+            <div class = "gallery-item">
+                <a href="photos/hibiscus.jpeg" target="_blank">
+                    <img src="photos/hibiscus.jpeg" alt="Hibiscus" loading="lazy">
+                </a>
+                <div class="caption">Hibiscus</div>
+            </div>
+            <div class = "gallery-item">
+                <a href="photos/jasmine.jpg" target="_blank">
+                    <img src="photos/jasmine.jpg" alt="Jasmine" loading="lazy">
+                </a>
+                <div class="caption">Jasmine</div>
+            </div>
+            <div class = "gallery-item">
+                <a href="photos/orchid.jpg" target="_blank">
+                    <img src="photos/orchid.jpg" alt="Orchid" loading="lazy">
+                </a>
+                <div class="caption">Orchid</div>
+            </div>
+            <div class = "gallery-item">
+                <a href="photos/tulip.jpg" target="_blank">
+                    <img src="photos/tulip.jpg" alt="Tulip" loading="lazy">
+                </a>
+                <div class="caption">Tulip</div>
+            </div>
+            <!--Repeat the above <A> tag for each image-->
+            
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Flower Gallery</p>
+    </footer>
+
+    <!--Link SimpleLightbox JavaScript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.7.0/simple-lightbox.min.js"></script>
+    <!--Initialize SimpleLightbox-->
+    <script>
+        const gallery = new SimpleLightbox('.gallery a', {
+            captions: true,
+            captionSelector: 'self',
+            captionType: 'attr',
+            captionsData: 'alt',
+            captionPosition: 'bottom',
+            captiondelay: 250,
+            nav: true,
+            navtext: ['<', '>'],
+            showcouter: true
+        });
+    </script>
+</body>
+</HTML>
